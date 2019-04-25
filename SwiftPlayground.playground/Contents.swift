@@ -27,3 +27,6 @@ let height = 70
 // Here is my comment
 
 print("Hey my name is " + firstName)
+
+// My own comment
+print("My own thing to print")
