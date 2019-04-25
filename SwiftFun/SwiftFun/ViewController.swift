@@ -14,11 +14,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.green
-
-        myFirstLabel.text = "HEYYYYYYYYYY what's going on!"
     }
 
+    @IBAction func buttonTapped(_ sender: Any) {
+        print("I clicked the button")
+        view.backgroundColor = UIColor.green
 
+        myFirstLabel.text = "OMG you changed the button"
+    }
+    
 }
 
