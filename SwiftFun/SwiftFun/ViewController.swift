@@ -16,11 +16,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    var count = 0
     @IBAction func buttonTapped(_ sender: Any) {
         print("I clicked the button")
-        view.backgroundColor = UIColor.green
-
-        myFirstLabel.text = "OMG you changed the button"
+        
+        count += 1
+        myFirstLabel.text = "OMG you changed the button " + String(count) + " times"
+        if count == 10 {
+            view.backgroundColor = UIColor.green
+        }
+        
     }
     
 }
