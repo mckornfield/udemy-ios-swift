@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         let newTotal = total + tip
         
-        let tipFormatted = String(format: "%.2f", tip)
+        let tipFormatted = String(format: "%.2f", tip) + (tip > 50.0 ? "🚀" : "")
         let newTotalFormatted = String(format: "%.2f", newTotal)
         myFirstLabel.text = "Tip : $\(tipFormatted), New Total: $\(newTotalFormatted)"
         

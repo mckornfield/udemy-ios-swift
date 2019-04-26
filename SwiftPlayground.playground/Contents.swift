@@ -98,3 +98,13 @@ days += 1
 let name = "Matt"
 let personsAge = 25
 print("Hi my name is \(name) and I am \(personsAge) years old")
+
+var sunny : Bool = false
+
+if sunny {
+    print("The weather is nice")
+} else {
+    print("The weather is stinky")
+}
+
+
