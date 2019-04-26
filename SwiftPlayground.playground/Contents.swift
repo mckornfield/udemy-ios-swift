@@ -107,4 +107,16 @@ if sunny {
     print("The weather is stinky")
 }
 
+var bestCandy = ["Twix", "Snickers","Crunch"]
 
+bestCandy.append("abc")
+bestCandy.insert("omg new thing", at: 1)
+print(bestCandy)
+bestCandy.remove(at:1)
+print(bestCandy)
+
+// Make an array of favorite movies
+//
+
+var favoriteMovies = ["Lord of the Rings","The Matrix","Iron Man"]
+favoriteMovies.remove(at: 2)
