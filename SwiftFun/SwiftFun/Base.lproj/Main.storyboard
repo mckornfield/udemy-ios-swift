@@ -18,38 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi My Name is Derek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Db-iC-Wcc">
-                                <rect key="frame" x="127" y="438" width="160" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Db-iC-Wcc">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mX-Vq-Yzt">
-                                <rect key="frame" x="164" y="489" width="86" height="30"/>
-                                <state key="normal" title="Change Text"/>
+                                <rect key="frame" x="162" y="479" width="90" height="30"/>
+                                <state key="normal" title="Calculate Tip"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hP-qJ-G6h"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip Ex. 15" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-Qs-oie">
+                                <rect key="frame" x="132" y="400" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Oqe-WI-F0Z"/>
+                                    <constraint firstAttribute="height" constant="30" id="qDH-vq-2Zz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Ex. 143.56" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-X6-xL1">
+                                <rect key="frame" x="132" y="342" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="HiB-rz-jLD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7Db-iC-Wcc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6E0-WB-7zP"/>
                             <constraint firstItem="9mX-Vq-Yzt" firstAttribute="top" secondItem="7Db-iC-Wcc" secondAttribute="bottom" constant="31" id="Ax8-l9-Xvx"/>
                             <constraint firstItem="7Db-iC-Wcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dbt-Mp-f8M"/>
+                            <constraint firstItem="fsl-Qs-oie" firstAttribute="top" secondItem="Ihh-X6-xL1" secondAttribute="bottom" constant="28" id="JT0-Ve-WnC"/>
+                            <constraint firstItem="Ihh-X6-xL1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qj3-9v-rLW"/>
                             <constraint firstItem="9mX-Vq-Yzt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="omf-b6-NRn"/>
                             <constraint firstItem="7Db-iC-Wcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pjY-aD-3wq"/>
                             <constraint firstItem="7Db-iC-Wcc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rWW-HV-zIM"/>
+                            <constraint firstItem="fsl-Qs-oie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDd-ff-GhL"/>
+                            <constraint firstItem="7Db-iC-Wcc" firstAttribute="top" secondItem="fsl-Qs-oie" secondAttribute="bottom" constant="18" id="zZt-m0-QZA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="myFirstLabel" destination="7Db-iC-Wcc" id="QDa-Ko-oip"/>
+                        <outlet property="tipTextField" destination="fsl-Qs-oie" id="ZIs-jj-wjM"/>
+                        <outlet property="totalTextField" destination="Ihh-X6-xL1" id="Bjs-fo-CBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
+            <point key="canvasLocation" x="50.724637681159422" y="24.107142857142858"/>
         </scene>
     </scenes>
 </document>

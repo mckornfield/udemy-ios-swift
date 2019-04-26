@@ -12,21 +12,39 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myFirstLabel: UILabel!
 
+    @IBOutlet weak var totalTextField: UITextField!
+
+    @IBOutlet weak var tipTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     var count = 0
     @IBAction func buttonTapped(_ sender: Any) {
-        print("I clicked the button")
+//        print("I clicked the button")
+//
+//        count += 1
+//        myFirstLabel.text = "OMG you changed the button " + String(count) + " times"
+//        if count == 10 {
+//            view.backgroundColor = UIColor.green
+//        }
         
-        count += 1
-        myFirstLabel.text = "OMG you changed the button " + String(count) + " times"
-        if count == 10 {
-            view.backgroundColor = UIColor.green
-        }
+        let total = Double(totalTextField.text!)!
+        print(total)
+    
+        let tipPercentage = Double(tipTextField.text!)!
+        print(tipPercentage)
+        
+        let tip : Double = total * (tipPercentage/100)
+        
+        let newTotal = total + tip
+        
+        let tipFormatted = String(format: "%.2f", tip)
+        let newTotalFormatted = String(format: "%.2f", newTotal)
+        myFirstLabel.text = "Tip : $\(tipFormatted), New Total: $\(newTotalFormatted)"
         
     }
-    
+
 }
 

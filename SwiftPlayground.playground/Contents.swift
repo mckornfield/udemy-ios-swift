@@ -52,3 +52,49 @@ if temp >= 80 {
     print("nice weather!")
 }
 
+// Math and doubles
+
+3 + 4
+
+4 - 5
+
+5 * 5
+
+6 / 5.0
+
+let a = 5
+let b = 2
+
+let c = a + b
+
+3.0 / 4
+
+3.1519 * 5
+
+let a2 = 5.1
+let b2 = 5
+
+Int(a2) + b2
+
+let daysInYear : Float = 365
+let daysInWeek : Float = 7.0
+
+daysInYear / daysInWeek
+
+let weeksInYear = 365 / 7.0
+
+// Floats and more math
+
+var days = 1
+
+// Long way
+days = days + 1
+
+// Same thing
+days += 1
+
+
+// String interpolation
+let name = "Matt"
+let personsAge = 25
+print("Hi my name is \(name) and I am \(personsAge) years old")
