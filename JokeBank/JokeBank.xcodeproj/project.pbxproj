@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				FDEE2032227386C0008B38B4 /* AppDelegate.swift */,
+				FDEE206022738796008B38B4 /* JokeTableViewController.swift */,
 				FDEE2036227386C0008B38B4 /* Main.storyboard */,
 				FDEE2039227386C1008B38B4 /* Assets.xcassets */,
 				FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */,
 				FDEE203E227386C1008B38B4 /* Info.plist */,
-				FDEE206022738796008B38B4 /* JokeTableViewController.swift */,
 			);
 			path = JokeBank;
 			sourceTree = "<group>";

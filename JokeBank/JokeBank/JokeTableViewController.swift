@@ -10,6 +10,8 @@ import UIKit
 
 class JokeTableViewController: UITableViewController {
 
+    var jokes = ["Six and Seven", "Circus Fire", "A Man Walks Into a Bar"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +24,18 @@ class JokeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return jokes.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "abc"
+        cell.textLabel?.text = jokes[indexPath.row]
+
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 
 }
