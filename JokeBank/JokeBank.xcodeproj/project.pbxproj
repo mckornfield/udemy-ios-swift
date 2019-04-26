@@ -14,6 +14,7 @@
 		FDEE2048227386C2008B38B4 /* JokeBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2047227386C2008B38B4 /* JokeBankTests.swift */; };
 		FDEE2053227386C2008B38B4 /* JokeBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */; };
 		FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE206022738796008B38B4 /* JokeTableViewController.swift */; };
+		FDEE2063227396DD008B38B4 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2062227396DD008B38B4 /* JokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeBankUITests.swift; sourceTree = "<group>"; };
 		FDEE2054227386C2008B38B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEE206022738796008B38B4 /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
+		FDEE2062227396DD008B38B4 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FDEE2032227386C0008B38B4 /* AppDelegate.swift */,
 				FDEE206022738796008B38B4 /* JokeTableViewController.swift */,
+				FDEE2062227396DD008B38B4 /* JokeViewController.swift */,
 				FDEE2036227386C0008B38B4 /* Main.storyboard */,
 				FDEE2039227386C1008B38B4 /* Assets.xcassets */,
 				FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */,
 				FDEE2033227386C0008B38B4 /* AppDelegate.swift in Sources */,
+				FDEE2063227396DD008B38B4 /* JokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

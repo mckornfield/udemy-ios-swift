@@ -12,6 +12,9 @@ class JokeTableViewController: UITableViewController {
 
     var jokes = ["Six and Seven", "Circus Fire", "A Man Walks Into a Bar"]
 
+    var questions = ["Why was six afraid of seven?", "Did you hear the one about the circus fire?", "A Man Walks Into a Bar"]
+    var answers = ["Because seven eight nine.", "It was in tents.", "Ow"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +38,19 @@ class JokeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        performSegue(withIdentifier: "moveToJokeDefinition", sender: indexPath.row)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Hey!")
+        if let jokeVC = segue.destination as? JokeViewController {
+            if let location = sender as? Int {
+                jokeVC.joke = jokes[location]
+                jokeVC.question = questions[location]
+                jokeVC.answer = answers[location]
+            }
+        }
+    }
+
 
 }
