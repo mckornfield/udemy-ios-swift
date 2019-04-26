@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDA7EE0F22734A6800C79F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7EE0E22734A6800C79F10 /* AppDelegate.swift */; };
-		FDA7EE1422734A6800C79F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA7EE1222734A6800C79F10 /* Main.storyboard */; };
-		FDA7EE1622734A6900C79F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA7EE1522734A6900C79F10 /* Assets.xcassets */; };
-		FDA7EE1922734A6900C79F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA7EE1722734A6900C79F10 /* LaunchScreen.storyboard */; };
-		FDA7EE2422734A6A00C79F10 /* JokeBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7EE2322734A6A00C79F10 /* JokeBankTests.swift */; };
-		FDA7EE2F22734A6A00C79F10 /* JokeBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7EE2E22734A6A00C79F10 /* JokeBankUITests.swift */; };
-		FDA7EE3D22734BF000C79F10 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7EE3C22734BF000C79F10 /* JokeTableViewController.swift */; };
+		FDEE2033227386C0008B38B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2032227386C0008B38B4 /* AppDelegate.swift */; };
+		FDEE2038227386C0008B38B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEE2036227386C0008B38B4 /* Main.storyboard */; };
+		FDEE203A227386C1008B38B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEE2039227386C1008B38B4 /* Assets.xcassets */; };
+		FDEE203D227386C1008B38B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */; };
+		FDEE2048227386C2008B38B4 /* JokeBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2047227386C2008B38B4 /* JokeBankTests.swift */; };
+		FDEE2053227386C2008B38B4 /* JokeBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */; };
+		FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE206022738796008B38B4 /* JokeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FDA7EE2022734A6A00C79F10 /* PBXContainerItemProxy */ = {
+		FDEE2044227386C2008B38B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FDA7EE0322734A6800C79F10 /* Project object */;
+			containerPortal = FDEE2027227386C0008B38B4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FDA7EE0A22734A6800C79F10;
+			remoteGlobalIDString = FDEE202E227386C0008B38B4;
 			remoteInfo = JokeBank;
 		};
-		FDA7EE2B22734A6A00C79F10 /* PBXContainerItemProxy */ = {
+		FDEE204F227386C2008B38B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FDA7EE0322734A6800C79F10 /* Project object */;
+			containerPortal = FDEE2027227386C0008B38B4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FDA7EE0A22734A6800C79F10;
+			remoteGlobalIDString = FDEE202E227386C0008B38B4;
 			remoteInfo = JokeBank;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDA7EE0B22734A6800C79F10 /* JokeBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDA7EE0E22734A6800C79F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDA7EE1322734A6800C79F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDA7EE1522734A6900C79F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDA7EE1822734A6900C79F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDA7EE1A22734A6900C79F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDA7EE1F22734A6A00C79F10 /* JokeBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDA7EE2322734A6A00C79F10 /* JokeBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeBankTests.swift; sourceTree = "<group>"; };
-		FDA7EE2522734A6A00C79F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDA7EE2A22734A6A00C79F10 /* JokeBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDA7EE2E22734A6A00C79F10 /* JokeBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeBankUITests.swift; sourceTree = "<group>"; };
-		FDA7EE3022734A6A00C79F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDA7EE3C22734BF000C79F10 /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
+		FDEE202F227386C0008B38B4 /* JokeBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEE2032227386C0008B38B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDEE2037227386C0008B38B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDEE2039227386C1008B38B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDEE203C227386C1008B38B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDEE203E227386C1008B38B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEE2043227386C2008B38B4 /* JokeBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEE2047227386C2008B38B4 /* JokeBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeBankTests.swift; sourceTree = "<group>"; };
+		FDEE2049227386C2008B38B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEE204E227386C2008B38B4 /* JokeBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeBankUITests.swift; sourceTree = "<group>"; };
+		FDEE2054227386C2008B38B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEE206022738796008B38B4 /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDA7EE0822734A6800C79F10 /* Frameworks */ = {
+		FDEE202C227386C0008B38B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE1C22734A6A00C79F10 /* Frameworks */ = {
+		FDEE2040227386C2008B38B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE2722734A6A00C79F10 /* Frameworks */ = {
+		FDEE204B227386C2008B38B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +74,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDA7EE0222734A6800C79F10 = {
+		FDEE2026227386C0008B38B4 = {
 			isa = PBXGroup;
 			children = (
-				FDA7EE0D22734A6800C79F10 /* JokeBank */,
-				FDA7EE2222734A6A00C79F10 /* JokeBankTests */,
-				FDA7EE2D22734A6A00C79F10 /* JokeBankUITests */,
-				FDA7EE0C22734A6800C79F10 /* Products */,
+				FDEE2031227386C0008B38B4 /* JokeBank */,
+				FDEE2046227386C2008B38B4 /* JokeBankTests */,
+				FDEE2051227386C2008B38B4 /* JokeBankUITests */,
+				FDEE2030227386C0008B38B4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FDA7EE0C22734A6800C79F10 /* Products */ = {
+		FDEE2030227386C0008B38B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDA7EE0B22734A6800C79F10 /* JokeBank.app */,
-				FDA7EE1F22734A6A00C79F10 /* JokeBankTests.xctest */,
-				FDA7EE2A22734A6A00C79F10 /* JokeBankUITests.xctest */,
+				FDEE202F227386C0008B38B4 /* JokeBank.app */,
+				FDEE2043227386C2008B38B4 /* JokeBankTests.xctest */,
+				FDEE204E227386C2008B38B4 /* JokeBankUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDA7EE0D22734A6800C79F10 /* JokeBank */ = {
+		FDEE2031227386C0008B38B4 /* JokeBank */ = {
 			isa = PBXGroup;
 			children = (
-				FDA7EE0E22734A6800C79F10 /* AppDelegate.swift */,
-				FDA7EE1222734A6800C79F10 /* Main.storyboard */,
-				FDA7EE3C22734BF000C79F10 /* JokeTableViewController.swift */,
-				FDA7EE1522734A6900C79F10 /* Assets.xcassets */,
-				FDA7EE1722734A6900C79F10 /* LaunchScreen.storyboard */,
-				FDA7EE1A22734A6900C79F10 /* Info.plist */,
+				FDEE2032227386C0008B38B4 /* AppDelegate.swift */,
+				FDEE2036227386C0008B38B4 /* Main.storyboard */,
+				FDEE2039227386C1008B38B4 /* Assets.xcassets */,
+				FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */,
+				FDEE203E227386C1008B38B4 /* Info.plist */,
+				FDEE206022738796008B38B4 /* JokeTableViewController.swift */,
 			);
 			path = JokeBank;
 			sourceTree = "<group>";
 		};
-		FDA7EE2222734A6A00C79F10 /* JokeBankTests */ = {
+		FDEE2046227386C2008B38B4 /* JokeBankTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDA7EE2322734A6A00C79F10 /* JokeBankTests.swift */,
-				FDA7EE2522734A6A00C79F10 /* Info.plist */,
+				FDEE2047227386C2008B38B4 /* JokeBankTests.swift */,
+				FDEE2049227386C2008B38B4 /* Info.plist */,
 			);
 			path = JokeBankTests;
 			sourceTree = "<group>";
 		};
-		FDA7EE2D22734A6A00C79F10 /* JokeBankUITests */ = {
+		FDEE2051227386C2008B38B4 /* JokeBankUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FDA7EE2E22734A6A00C79F10 /* JokeBankUITests.swift */,
-				FDA7EE3022734A6A00C79F10 /* Info.plist */,
+				FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */,
+				FDEE2054227386C2008B38B4 /* Info.plist */,
 			);
 			path = JokeBankUITests;
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDA7EE0A22734A6800C79F10 /* JokeBank */ = {
+		FDEE202E227386C0008B38B4 /* JokeBank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDA7EE3322734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBank" */;
+			buildConfigurationList = FDEE2057227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBank" */;
 			buildPhases = (
-				FDA7EE0722734A6800C79F10 /* Sources */,
-				FDA7EE0822734A6800C79F10 /* Frameworks */,
-				FDA7EE0922734A6800C79F10 /* Resources */,
+				FDEE202B227386C0008B38B4 /* Sources */,
+				FDEE202C227386C0008B38B4 /* Frameworks */,
+				FDEE202D227386C0008B38B4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +142,69 @@
 			);
 			name = JokeBank;
 			productName = JokeBank;
-			productReference = FDA7EE0B22734A6800C79F10 /* JokeBank.app */;
+			productReference = FDEE202F227386C0008B38B4 /* JokeBank.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FDA7EE1E22734A6A00C79F10 /* JokeBankTests */ = {
+		FDEE2042227386C2008B38B4 /* JokeBankTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDA7EE3622734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBankTests" */;
+			buildConfigurationList = FDEE205A227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBankTests" */;
 			buildPhases = (
-				FDA7EE1B22734A6A00C79F10 /* Sources */,
-				FDA7EE1C22734A6A00C79F10 /* Frameworks */,
-				FDA7EE1D22734A6A00C79F10 /* Resources */,
+				FDEE203F227386C2008B38B4 /* Sources */,
+				FDEE2040227386C2008B38B4 /* Frameworks */,
+				FDEE2041227386C2008B38B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDA7EE2122734A6A00C79F10 /* PBXTargetDependency */,
+				FDEE2045227386C2008B38B4 /* PBXTargetDependency */,
 			);
 			name = JokeBankTests;
 			productName = JokeBankTests;
-			productReference = FDA7EE1F22734A6A00C79F10 /* JokeBankTests.xctest */;
+			productReference = FDEE2043227386C2008B38B4 /* JokeBankTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FDA7EE2922734A6A00C79F10 /* JokeBankUITests */ = {
+		FDEE204D227386C2008B38B4 /* JokeBankUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDA7EE3922734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBankUITests" */;
+			buildConfigurationList = FDEE205D227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBankUITests" */;
 			buildPhases = (
-				FDA7EE2622734A6A00C79F10 /* Sources */,
-				FDA7EE2722734A6A00C79F10 /* Frameworks */,
-				FDA7EE2822734A6A00C79F10 /* Resources */,
+				FDEE204A227386C2008B38B4 /* Sources */,
+				FDEE204B227386C2008B38B4 /* Frameworks */,
+				FDEE204C227386C2008B38B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDA7EE2C22734A6A00C79F10 /* PBXTargetDependency */,
+				FDEE2050227386C2008B38B4 /* PBXTargetDependency */,
 			);
 			name = JokeBankUITests;
 			productName = JokeBankUITests;
-			productReference = FDA7EE2A22734A6A00C79F10 /* JokeBankUITests.xctest */;
+			productReference = FDEE204E227386C2008B38B4 /* JokeBankUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDA7EE0322734A6800C79F10 /* Project object */ = {
+		FDEE2027227386C0008B38B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Matthew Kornfield";
 				TargetAttributes = {
-					FDA7EE0A22734A6800C79F10 = {
+					FDEE202E227386C0008B38B4 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					FDA7EE1E22734A6A00C79F10 = {
+					FDEE2042227386C2008B38B4 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = FDA7EE0A22734A6800C79F10;
+						TestTargetID = FDEE202E227386C0008B38B4;
 					};
-					FDA7EE2922734A6A00C79F10 = {
+					FDEE204D227386C2008B38B4 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = FDA7EE0A22734A6800C79F10;
+						TestTargetID = FDEE202E227386C0008B38B4;
 					};
 				};
 			};
-			buildConfigurationList = FDA7EE0622734A6800C79F10 /* Build configuration list for PBXProject "JokeBank" */;
+			buildConfigurationList = FDEE202A227386C0008B38B4 /* Build configuration list for PBXProject "JokeBank" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = FDA7EE0222734A6800C79F10;
-			productRefGroup = FDA7EE0C22734A6800C79F10 /* Products */;
+			mainGroup = FDEE2026227386C0008B38B4;
+			productRefGroup = FDEE2030227386C0008B38B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDA7EE0A22734A6800C79F10 /* JokeBank */,
-				FDA7EE1E22734A6A00C79F10 /* JokeBankTests */,
-				FDA7EE2922734A6A00C79F10 /* JokeBankUITests */,
+				FDEE202E227386C0008B38B4 /* JokeBank */,
+				FDEE2042227386C2008B38B4 /* JokeBankTests */,
+				FDEE204D227386C2008B38B4 /* JokeBankUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FDA7EE0922734A6800C79F10 /* Resources */ = {
+		FDEE202D227386C0008B38B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA7EE1922734A6900C79F10 /* LaunchScreen.storyboard in Resources */,
-				FDA7EE1622734A6900C79F10 /* Assets.xcassets in Resources */,
-				FDA7EE1422734A6800C79F10 /* Main.storyboard in Resources */,
+				FDEE203D227386C1008B38B4 /* LaunchScreen.storyboard in Resources */,
+				FDEE203A227386C1008B38B4 /* Assets.xcassets in Resources */,
+				FDEE2038227386C0008B38B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE1D22734A6A00C79F10 /* Resources */ = {
+		FDEE2041227386C2008B38B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE2822734A6A00C79F10 /* Resources */ = {
+		FDEE204C227386C2008B38B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FDA7EE0722734A6800C79F10 /* Sources */ = {
+		FDEE202B227386C0008B38B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA7EE3D22734BF000C79F10 /* JokeTableViewController.swift in Sources */,
-				FDA7EE0F22734A6800C79F10 /* AppDelegate.swift in Sources */,
+				FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */,
+				FDEE2033227386C0008B38B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE1B22734A6A00C79F10 /* Sources */ = {
+		FDEE203F227386C2008B38B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA7EE2422734A6A00C79F10 /* JokeBankTests.swift in Sources */,
+				FDEE2048227386C2008B38B4 /* JokeBankTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDA7EE2622734A6A00C79F10 /* Sources */ = {
+		FDEE204A227386C2008B38B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA7EE2F22734A6A00C79F10 /* JokeBankUITests.swift in Sources */,
+				FDEE2053227386C2008B38B4 /* JokeBankUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FDA7EE2122734A6A00C79F10 /* PBXTargetDependency */ = {
+		FDEE2045227386C2008B38B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDA7EE0A22734A6800C79F10 /* JokeBank */;
-			targetProxy = FDA7EE2022734A6A00C79F10 /* PBXContainerItemProxy */;
+			target = FDEE202E227386C0008B38B4 /* JokeBank */;
+			targetProxy = FDEE2044227386C2008B38B4 /* PBXContainerItemProxy */;
 		};
-		FDA7EE2C22734A6A00C79F10 /* PBXTargetDependency */ = {
+		FDEE2050227386C2008B38B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDA7EE0A22734A6800C79F10 /* JokeBank */;
-			targetProxy = FDA7EE2B22734A6A00C79F10 /* PBXContainerItemProxy */;
+			target = FDEE202E227386C0008B38B4 /* JokeBank */;
+			targetProxy = FDEE204F227386C2008B38B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FDA7EE1222734A6800C79F10 /* Main.storyboard */ = {
+		FDEE2036227386C0008B38B4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDA7EE1322734A6800C79F10 /* Base */,
+				FDEE2037227386C0008B38B4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FDA7EE1722734A6900C79F10 /* LaunchScreen.storyboard */ = {
+		FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDA7EE1822734A6900C79F10 /* Base */,
+				FDEE203C227386C1008B38B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FDA7EE3122734A6A00C79F10 /* Debug */ = {
+		FDEE2055227386C2008B38B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +373,7 @@
 			};
 			name = Debug;
 		};
-		FDA7EE3222734A6A00C79F10 /* Release */ = {
+		FDEE2056227386C2008B38B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,7 +428,7 @@
 			};
 			name = Release;
 		};
-		FDA7EE3422734A6A00C79F10 /* Debug */ = {
+		FDEE2058227386C2008B38B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -445,7 +445,7 @@
 			};
 			name = Debug;
 		};
-		FDA7EE3522734A6A00C79F10 /* Release */ = {
+		FDEE2059227386C2008B38B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -462,7 +462,7 @@
 			};
 			name = Release;
 		};
-		FDA7EE3722734A6A00C79F10 /* Debug */ = {
+		FDEE205B227386C2008B38B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		FDA7EE3822734A6A00C79F10 /* Release */ = {
+		FDEE205C227386C2008B38B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -502,7 +502,7 @@
 			};
 			name = Release;
 		};
-		FDA7EE3A22734A6A00C79F10 /* Debug */ = {
+		FDEE205E227386C2008B38B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -521,7 +521,7 @@
 			};
 			name = Debug;
 		};
-		FDA7EE3B22734A6A00C79F10 /* Release */ = {
+		FDEE205F227386C2008B38B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,43 +543,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDA7EE0622734A6800C79F10 /* Build configuration list for PBXProject "JokeBank" */ = {
+		FDEE202A227386C0008B38B4 /* Build configuration list for PBXProject "JokeBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA7EE3122734A6A00C79F10 /* Debug */,
-				FDA7EE3222734A6A00C79F10 /* Release */,
+				FDEE2055227386C2008B38B4 /* Debug */,
+				FDEE2056227386C2008B38B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDA7EE3322734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBank" */ = {
+		FDEE2057227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA7EE3422734A6A00C79F10 /* Debug */,
-				FDA7EE3522734A6A00C79F10 /* Release */,
+				FDEE2058227386C2008B38B4 /* Debug */,
+				FDEE2059227386C2008B38B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDA7EE3622734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBankTests" */ = {
+		FDEE205A227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBankTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA7EE3722734A6A00C79F10 /* Debug */,
-				FDA7EE3822734A6A00C79F10 /* Release */,
+				FDEE205B227386C2008B38B4 /* Debug */,
+				FDEE205C227386C2008B38B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDA7EE3922734A6A00C79F10 /* Build configuration list for PBXNativeTarget "JokeBankUITests" */ = {
+		FDEE205D227386C2008B38B4 /* Build configuration list for PBXNativeTarget "JokeBankUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA7EE3A22734A6A00C79F10 /* Debug */,
-				FDA7EE3B22734A6A00C79F10 /* Release */,
+				FDEE205E227386C2008B38B4 /* Debug */,
+				FDEE205F227386C2008B38B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDA7EE0322734A6800C79F10 /* Project object */;
+	rootObject = FDEE2027227386C0008B38B4 /* Project object */;
 }
