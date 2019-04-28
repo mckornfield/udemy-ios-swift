@@ -9,38 +9,50 @@
 import UIKit
 
 class TodoListTableViewController: UITableViewController {
-
+    
     var todos: [Todo] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         todos = [
             Todo(important:true,name:"Take out the trash"),
             Todo(important:false,name:"Pay Taxes"),
             Todo(important:true,name:"Watch church"),
         ]
     }
-
-
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return todos.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let todo = todos[indexPath.row]
         cell.textLabel?.text = todo.toString()
-
+        
         // Configure the cell...
-
+        
         return cell
     }
- 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ClickIndividualTodo", sender: indexPath.row)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let createVC = segue.destination as? CreateTodoViewController {
             createVC.todoTableVC = self
+        } else if let completeVC = segue.destination as? TodoViewController {
+            if let todoIndex = sender as? Int {
+                completeVC.todo = todos[todoIndex]
+                completeVC.removeTodo = {
+                    self.todos.remove(at: todoIndex)
+                    self.tableView.reloadData()
+                }
+            }
         }
     }
 }
