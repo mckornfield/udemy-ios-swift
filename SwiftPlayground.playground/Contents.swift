@@ -195,3 +195,19 @@ var bike = Bike()
 bike.color = "Green"
 bike.material = "Aluminum"
 bike.tirePressure = 35
+
+// Optionals
+
+var weather2 : String? = "abc"
+
+print(weather2)
+var ab = "asd"
+var newNumber = Int(ab)
+
+if newNumber != nil {
+    print(newNumber!)
+}
+
+if let newerNumber = weather2 {
+    print(newerNumber)
+}

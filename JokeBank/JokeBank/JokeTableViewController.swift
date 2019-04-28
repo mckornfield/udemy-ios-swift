@@ -10,11 +10,12 @@ import UIKit
 
 class JokeTableViewController: UITableViewController {
 
-    var jokes = ["Six and Seven", "Circus Fire", "A Man Walks Into a Bar"]
-
-    var questions = ["Why was six afraid of seven?", "Did you hear the one about the circus fire?", "A Man Walks Into a Bar"]
-    var answers = ["Because seven eight nine.", "It was in tents.", "Ow"]
-    
+    var jokes =
+        [
+            Joke(title:"Six and Seven",question:"Why was six afraid of seven?",answer:"Because seven eight nine."),
+            Joke(title:"Circus Fire",question:"Did you hear the one about the circus fire?",answer:"It was in tents."),
+            Joke(title:"A Man Walks Into a Bar",question:"A Man Walks Into a Bar",answer:"Ow")
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +33,7 @@ class JokeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = jokes[indexPath.row]
+        cell.textLabel?.text = jokes[indexPath.row].title
 
         return cell
     }
@@ -45,9 +46,10 @@ class JokeTableViewController: UITableViewController {
         print("Hey!")
         if let jokeVC = segue.destination as? JokeViewController {
             if let location = sender as? Int {
-                jokeVC.joke = jokes[location]
-                jokeVC.question = questions[location]
-                jokeVC.answer = answers[location]
+                let jokeObj = jokes[location]
+                jokeVC.joke = jokeObj.title
+                jokeVC.question = jokeObj.question
+                jokeVC.answer = jokeObj.answer
             }
         }
     }

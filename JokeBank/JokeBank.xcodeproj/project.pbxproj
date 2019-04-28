@@ -15,6 +15,7 @@
 		FDEE2053227386C2008B38B4 /* JokeBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2052227386C2008B38B4 /* JokeBankUITests.swift */; };
 		FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE206022738796008B38B4 /* JokeTableViewController.swift */; };
 		FDEE2063227396DD008B38B4 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE2062227396DD008B38B4 /* JokeViewController.swift */; };
+		FDEE20652275521A008B38B4 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE20642275521A008B38B4 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FDEE2054227386C2008B38B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEE206022738796008B38B4 /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
 		FDEE2062227396DD008B38B4 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		FDEE20642275521A008B38B4 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FDEE2039227386C1008B38B4 /* Assets.xcassets */,
 				FDEE203B227386C1008B38B4 /* LaunchScreen.storyboard */,
 				FDEE203E227386C1008B38B4 /* Info.plist */,
+				FDEE20642275521A008B38B4 /* Joke.swift */,
 			);
 			path = JokeBank;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				FDEE206122738796008B38B4 /* JokeTableViewController.swift in Sources */,
 				FDEE2033227386C0008B38B4 /* AppDelegate.swift in Sources */,
+				FDEE20652275521A008B38B4 /* Joke.swift in Sources */,
 				FDEE2063227396DD008B38B4 /* JokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

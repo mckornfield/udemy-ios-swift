@@ -9,42 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var myFirstLabel: UILabel!
-
+    
     @IBOutlet weak var totalTextField: UITextField!
-
+    
     @IBOutlet weak var tipTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     var count = 0
     @IBAction func buttonTapped(_ sender: Any) {
-//        print("I clicked the button")
-//
-//        count += 1
-//        myFirstLabel.text = "OMG you changed the button " + String(count) + " times"
-//        if count == 10 {
-//            view.backgroundColor = UIColor.green
-//        }
+        //        print("I clicked the button")
+        //
+        //        count += 1
+        //        myFirstLabel.text = "OMG you changed the button " + String(count) + " times"
+        //        if count == 10 {
+        //            view.backgroundColor = UIColor.green
+        //        }
         
-        let total = Double(totalTextField.text!)!
-        print(total)
-    
-        let tipPercentage = Double(tipTextField.text!)!
-        print(tipPercentage)
-        
-        let tip : Double = total * (tipPercentage/100)
-        
-        let newTotal = total + tip
-        
-        let tipFormatted = String(format: "%.2f", tip) + (tip > 50.0 ? "🚀" : "")
-        let newTotalFormatted = String(format: "%.2f", newTotal)
-        myFirstLabel.text = "Tip : $\(tipFormatted), New Total: $\(newTotalFormatted)"
-        
+        if let total = totalTextField.text {
+            if let totalDouble = Double(total) {
+                if let tipPercentage = tipTextField.text {
+                    if let tipPercentageDouble = Double(tipPercentage) {
+                        let tip : Double = totalDouble * (tipPercentageDouble/100)
+                        
+                        let newTotal = tipPercentageDouble + tip
+                        
+                        let tipFormatted = String(format: "%.2f", tip) + (tip > 50.0 ? "🚀" : "")
+                        let newTotalFormatted = String(format: "%.2f", newTotal)
+                        myFirstLabel.text = "Tip : $\(tipFormatted), New Total: $\(newTotalFormatted)"
+                    }
+                }
+            }
+        }
     }
-
+    
 }
 
