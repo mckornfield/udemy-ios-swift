@@ -120,3 +120,78 @@ print(bestCandy)
 
 var favoriteMovies = ["Lord of the Rings","The Matrix","Iron Man"]
 favoriteMovies.remove(at: 2)
+
+
+func printMessage(){
+    print("Have a good day")
+}
+printMessage()
+
+func sayHappyBirthday(person: String){
+    print("Happy birthday \(person)!")
+}
+
+sayHappyBirthday(person: "Mike")
+
+sayHappyBirthday(person: "Sean")
+
+func addInts(first: Int, second: Int){
+    print(String(first + second))
+}
+addInts(first:1, second: 2)
+
+func addNumbers(first: Int, second: Int) -> Int{
+    return first + second
+}
+
+var sum = addNumbers(first:1,second:2)
+
+print(sum)
+
+// Takes 2 ints, multiplies and returns a double
+
+func multiply(first: Int, second: Int) -> Double{
+    return Double(first*second)
+}
+
+multiply(first: 2, second: 3)
+
+class Dog {
+    var name = ""
+    var furColor = ""
+    var age = 0
+    
+    func bark(){
+        print("Woof woof")
+    }
+    
+    func dogInfo(){
+        print("This dog is \(name) it is \(age) year(s) old and its fur is \(furColor)")
+    }
+    
+    func doubleAge(){
+        age = age * 2
+    }
+}
+
+var dog1 = Dog()
+
+dog1.name = "abc"
+dog1.furColor = "white"
+dog1.age = 6
+dog1.bark()
+dog1.dogInfo()
+dog1.doubleAge()
+dog1.dogInfo()
+var dog2 = Dog()
+
+class Bike {
+    var color = ""
+    var material = ""
+    var tirePressure = 0
+}
+
+var bike = Bike()
+bike.color = "Green"
+bike.material = "Aluminum"
+bike.tirePressure = 35
