@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,11 +33,79 @@
                             <outlet property="delegate" destination="QHG-pe-ZfM" id="IWf-bb-5KR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo List" id="cHz-T2-9QH"/>
+                    <navigationItem key="navigationItem" title="Todo List" id="cHz-T2-9QH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="8qw-Ot-oOA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c6u-x4-ZQc">
+                            <connections>
+                                <segue destination="Y9V-4o-Vn5" kind="show" id="izG-rq-gUq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SdW-vD-brw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-555" y="-306"/>
+        </scene>
+        <!--Create Todo View Controller-->
+        <scene sceneID="uB0-du-jM8">
+            <objects>
+                <viewController id="Y9V-4o-Vn5" customClass="CreateTodoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xEr-VS-F0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Walk the Dog" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITT-pL-tsH">
+                                <rect key="frame" x="130" y="144" width="155" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-8V-QNY">
+                                <rect key="frame" x="166" y="196" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INp-fu-Q47">
+                                <rect key="frame" x="182" y="103" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-II-1it">
+                                <rect key="frame" x="174" y="292" width="66" height="30"/>
+                                <state key="normal" title="Add Todo"/>
+                                <connections>
+                                    <action selector="addTodo:" destination="Y9V-4o-Vn5" eventType="touchUpInside" id="jMp-D1-jrY"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uqk-hy-qX3">
+                                <rect key="frame" x="183" y="234" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uqk-hy-qX3" firstAttribute="centerX" secondItem="xEr-VS-F0i" secondAttribute="centerX" id="C8p-zd-t5Y"/>
+                            <constraint firstItem="ITT-pL-tsH" firstAttribute="top" secondItem="INp-fu-Q47" secondAttribute="bottom" constant="14" id="D60-aM-sJO"/>
+                            <constraint firstItem="ITT-pL-tsH" firstAttribute="centerX" secondItem="xEr-VS-F0i" secondAttribute="centerX" id="GhP-Xa-xE9"/>
+                            <constraint firstItem="Nth-8V-QNY" firstAttribute="centerX" secondItem="xEr-VS-F0i" secondAttribute="centerX" id="H2f-Sm-85h"/>
+                            <constraint firstItem="uqk-hy-qX3" firstAttribute="top" secondItem="Nth-8V-QNY" secondAttribute="bottom" constant="21" id="M7p-XQ-bGh"/>
+                            <constraint firstItem="Nth-8V-QNY" firstAttribute="top" secondItem="ITT-pL-tsH" secondAttribute="bottom" constant="38" id="N7Y-g9-4gy"/>
+                            <constraint firstItem="ITT-pL-tsH" firstAttribute="top" secondItem="LOM-VP-uO1" secondAttribute="top" constant="50" id="Nbn-Sz-1cE"/>
+                            <constraint firstItem="OaK-II-1it" firstAttribute="top" secondItem="Nth-8V-QNY" secondAttribute="bottom" constant="65" id="eC7-L7-AZo"/>
+                            <constraint firstItem="INp-fu-Q47" firstAttribute="centerX" secondItem="xEr-VS-F0i" secondAttribute="centerX" id="rHp-rT-xxd"/>
+                            <constraint firstItem="OaK-II-1it" firstAttribute="centerX" secondItem="xEr-VS-F0i" secondAttribute="centerX" id="sza-WH-m6i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LOM-VP-uO1"/>
+                    </view>
+                    <connections>
+                        <outlet property="importantSwitch" destination="uqk-hy-qX3" id="V2q-gd-6FB"/>
+                        <outlet property="todoName" destination="ITT-pL-tsH" id="Y1d-MS-Yu7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53h-OE-wxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.91304347826087" y="-306.02678571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xfh-HK-OX1">

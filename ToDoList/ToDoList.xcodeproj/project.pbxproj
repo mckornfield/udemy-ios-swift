@@ -17,7 +17,7 @@
 		FDCB47AC227643D800E1CDEF /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47AB227643D800E1CDEF /* ToDoListUITests.swift */; };
 		FDCB47BA2276443900E1CDEF /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47B92276443900E1CDEF /* TodoListTableViewController.swift */; };
 		FDCB47BC2276456500E1CDEF /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47BB2276456500E1CDEF /* Todo.swift */; };
-		FDCB47BE2276478B00E1CDEF /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47BD2276478B00E1CDEF /* TodoViewController.swift */; };
+		FDCB47BE2276478B00E1CDEF /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47BD2276478B00E1CDEF /* CreateTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		FDCB47AD227643D800E1CDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCB47B92276443900E1CDEF /* TodoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
 		FDCB47BB2276456500E1CDEF /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		FDCB47BD2276478B00E1CDEF /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		FDCB47BD2276478B00E1CDEF /* CreateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				FDCB4788227643D600E1CDEF /* AppDelegate.swift */,
 				FDCB478A227643D600E1CDEF /* ViewController.swift */,
 				FDCB47B92276443900E1CDEF /* TodoListTableViewController.swift */,
-				FDCB47BD2276478B00E1CDEF /* TodoViewController.swift */,
+				FDCB47BD2276478B00E1CDEF /* CreateTodoViewController.swift */,
 				FDCB478C227643D600E1CDEF /* Main.storyboard */,
 				FDCB4792227643D800E1CDEF /* Assets.xcassets */,
 				FDCB4794227643D800E1CDEF /* LaunchScreen.storyboard */,
@@ -272,7 +272,7 @@
 				FDCB478B227643D600E1CDEF /* ViewController.swift in Sources */,
 				FDCB4791227643D600E1CDEF /* ToDoList.xcdatamodeld in Sources */,
 				FDCB4789227643D600E1CDEF /* AppDelegate.swift in Sources */,
-				FDCB47BE2276478B00E1CDEF /* TodoViewController.swift in Sources */,
+				FDCB47BE2276478B00E1CDEF /* CreateTodoViewController.swift in Sources */,
 				FDCB47BA2276443900E1CDEF /* TodoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
