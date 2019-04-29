@@ -16,7 +16,6 @@
 		FDCB47A1227643D800E1CDEF /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47A0227643D800E1CDEF /* ToDoListTests.swift */; };
 		FDCB47AC227643D800E1CDEF /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47AB227643D800E1CDEF /* ToDoListUITests.swift */; };
 		FDCB47BA2276443900E1CDEF /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47B92276443900E1CDEF /* TodoListTableViewController.swift */; };
-		FDCB47BC2276456500E1CDEF /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47BB2276456500E1CDEF /* Todo.swift */; };
 		FDCB47BE2276478B00E1CDEF /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB47BD2276478B00E1CDEF /* CreateTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		FDCB47AB227643D800E1CDEF /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		FDCB47AD227643D800E1CDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCB47B92276443900E1CDEF /* TodoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
-		FDCB47BB2276456500E1CDEF /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		FDCB47BD2276478B00E1CDEF /* CreateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +112,6 @@
 				FDCB4794227643D800E1CDEF /* LaunchScreen.storyboard */,
 				FDCB4797227643D800E1CDEF /* Info.plist */,
 				FDCB478F227643D600E1CDEF /* ToDoList.xcdatamodeld */,
-				FDCB47BB2276456500E1CDEF /* Todo.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCB47BC2276456500E1CDEF /* Todo.swift in Sources */,
 				FDCB478B227643D600E1CDEF /* TodoViewController.swift in Sources */,
 				FDCB4791227643D600E1CDEF /* ToDoList.xcdatamodeld in Sources */,
 				FDCB4789227643D600E1CDEF /* AppDelegate.swift in Sources */,

@@ -10,17 +10,11 @@ import UIKit
 
 class TodoListTableViewController: UITableViewController {
     
-    var todos: [Todo] = []
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        todos = [
-            Todo(important:true,name:"Take out the trash"),
-            Todo(important:false,name:"Pay Taxes"),
-            Todo(important:true,name:"Watch church"),
-        ]
-    }
+    var todos: [ToDoStore] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        getTodos()
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -31,11 +25,32 @@ class TodoListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let todo = todos[indexPath.row]
-        cell.textLabel?.text = todo.toString()
+        cell.textLabel?.text = toString(todo: todo)
         
         // Configure the cell...
         
         return cell
+    }
+    
+    
+    func toString(todo: ToDoStore) -> String {
+        if let name = todo.name{
+            return "\(todo.important ? "! " : "")\(name)"
+        } else {
+            return ""
+        }
+    }
+    
+    func getTodos() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let todosFromCoreData = try? context.fetch(ToDoStore.fetchRequest()){
+                if let todos = todosFromCoreData as? [ToDoStore]{
+                    print(todos)
+                    self.todos = todos
+                    tableView.reloadData()
+                }
+            }
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -49,8 +64,11 @@ class TodoListTableViewController: UITableViewController {
             if let todoIndex = sender as? Int {
                 completeVC.todo = todos[todoIndex]
                 completeVC.removeTodo = {
-                    self.todos.remove(at: todoIndex)
-                    self.tableView.reloadData()
+                    if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                        context.delete(completeVC.todo!)
+                        self.tableView.reloadData()
+                    }
+
                 }
             }
         }

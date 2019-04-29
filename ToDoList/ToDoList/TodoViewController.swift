@@ -11,16 +11,24 @@ import UIKit
 class TodoViewController: UIViewController {
 
     @IBOutlet weak var todoText: UILabel!
-    var todo : Todo? = nil
+    var todo : ToDoStore? = nil
 
     var removeTodo : () -> Void = {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let td :Todo = todo {
-            todoText.text = td.toString()
+        if let td :ToDoStore = todo {
+            todoText.text = toString(todo: td)
         }
         
+    }
+    
+    func toString(todo: ToDoStore) -> String {
+        if let name = todo.name{
+            return "\(todo.important ? "! " : "")\(name)"
+        } else {
+            return ""
+        }
     }
     
 
