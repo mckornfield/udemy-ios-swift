@@ -45,7 +45,6 @@ class TodoListTableViewController: UITableViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             if let todosFromCoreData = try? context.fetch(ToDoStore.fetchRequest()){
                 if let todos = todosFromCoreData as? [ToDoStore]{
-                    print(todos)
                     self.todos = todos
                     tableView.reloadData()
                 }
@@ -66,6 +65,7 @@ class TodoListTableViewController: UITableViewController {
                 completeVC.removeTodo = {
                     if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
                         context.delete(completeVC.todo!)
+                        try? context.save()
                         self.tableView.reloadData()
                     }
 
