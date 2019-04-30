@@ -211,3 +211,19 @@ if newNumber != nil {
 if let newerNumber = weather2 {
     print(newerNumber)
 }
+
+// Dictionaries
+
+var dogInfo : [String:Int] = ["Fido": 5, "Sean": 19, "Sara": 43]
+
+dogInfo["Sean"]
+dogInfo["Fido"]
+dogInfo["John"] = 77
+
+dogInfo
+
+// Make a dictionary with doubles for keys and bools for values
+
+var dict : [Double:Bool] = [1.0: true, 2.0: false, 1.5: true]
+
+dict[2.0]

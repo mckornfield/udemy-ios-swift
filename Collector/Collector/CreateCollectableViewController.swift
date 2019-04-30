@@ -20,7 +20,11 @@ class CreateCollectableViewController: UIViewController, UIImagePickerController
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
+        if let image = info[.originalImage] as? UIImage{
+            imageView.image = image
+        }
+        pickerController.dismiss(animated: true, completion: nil)
+
     }
 
     @IBAction func mediaTapped(_ sender: Any) {
@@ -34,6 +38,14 @@ class CreateCollectableViewController: UIViewController, UIImagePickerController
     }
 
     @IBAction func addTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let collectable = Collectable(context: context)
+            collectable.title = titleTextField.text
+            collectable.image = imageView.image?.jpegData(compressionQuality: 1.0)
+            try? context.save()
+        }
+
+        navigationController?.popViewController(animated: true)
     }
 
 }
