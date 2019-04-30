@@ -43,6 +43,7 @@ class CreateCollectableViewController: UIViewController, UIImagePickerController
             collectable.title = titleTextField.text
             collectable.image = imageView.image?.jpegData(compressionQuality: 1.0)
             try? context.save()
+
         }
 
         navigationController?.popViewController(animated: true)
