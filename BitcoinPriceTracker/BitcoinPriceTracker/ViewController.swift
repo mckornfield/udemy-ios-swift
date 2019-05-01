@@ -33,13 +33,13 @@ class ViewController: UIViewController {
                     if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Double] {
                         DispatchQueue.main.async {
                             if let usd = json["USD"]{
-                                self.usdLabel.text = "$\(usd)"
+                                self.usdLabel.text = self.doubleToMoney(price: usd, currencyCode: "USD")
                             }
                             if let yen = json["JPY"]{
-                                self.japanLabel.text = "¥\(yen)"
+                                self.japanLabel.text = self.doubleToMoney(price: yen, currencyCode: "JPY")
                             }
                             if let eur = json["EUR"]{
-                                self.euroLabel.text = "€\(eur)"
+                                self.euroLabel.text = self.doubleToMoney(price: eur, currencyCode: "EUR")
 
                             }
                             let formatter = DateFormatter()
@@ -53,6 +53,14 @@ class ViewController: UIViewController {
                 }
             }).resume()
         }
+    }
+
+    func doubleToMoney(price: Double, currencyCode: String) -> String?{
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currencyCode
+        let priceString = formatter.string(from: NSNumber(value: price))
+        return priceString
     }
 
 }
