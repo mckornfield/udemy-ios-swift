@@ -14,14 +14,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var japanLabel: UILabel!
     @IBOutlet weak var euroLabel: UILabel!
     @IBOutlet weak var lastUpdatedLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getDefaultPrices()
         getPrice()
     }
 
     @IBAction func updatePrice(_ sender: Any) {
         getPrice()
+    }
+
+    func getDefaultPrices(){
+        let usdPrice = UserDefaults.standard.double(forKey: "usd")
+        if usdPrice != 0.0 {
+            self.usdLabel.text = self.doubleToMoney(usdPrice, "USD") + "~"
+        }
+        let jpyPrice = UserDefaults.standard.double(forKey: "jpy")
+        if jpyPrice != 0.0 {
+            self.japanLabel.text = self.doubleToMoney(jpyPrice, "JPY") + "~"
+        }
+        let eurPrice = UserDefaults.standard.double(forKey: "eur")
+        if eurPrice != 0.0 {
+            self.euroLabel.text = self.doubleToMoney(eurPrice, "EUR") + "~"
+        }
     }
 
 
@@ -33,18 +49,21 @@ class ViewController: UIViewController {
                     if let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Double] {
                         DispatchQueue.main.async {
                             if let usd = json["USD"]{
-                                self.usdLabel.text = self.doubleToMoney(price: usd, currencyCode: "USD")
+                                self.usdLabel.text = self.doubleToMoney(usd, "USD")
+                                UserDefaults.standard.set(usd, forKey: "usd")
                             }
                             if let yen = json["JPY"]{
-                                self.japanLabel.text = self.doubleToMoney(price: yen, currencyCode: "JPY")
+                                self.japanLabel.text = self.doubleToMoney(yen, "JPY")
+                                UserDefaults.standard.set(yen, forKey: "jpy")
                             }
                             if let eur = json["EUR"]{
-                                self.euroLabel.text = self.doubleToMoney(price: eur, currencyCode: "EUR")
-
+                                self.euroLabel.text = self.doubleToMoney(eur, "EUR")
+                                UserDefaults.standard.set(eur, forKey: "eur")
                             }
                             let formatter = DateFormatter()
                             formatter.dateFormat = "yyyy/MM/dd HH:mm"
                             self.lastUpdatedLabel.text = "Last Updated: " + formatter.string(from: Date.init())
+                            UserDefaults.standard.synchronize()
                         }
                     }
                 } else {
@@ -55,12 +74,16 @@ class ViewController: UIViewController {
         }
     }
 
-    func doubleToMoney(price: Double, currencyCode: String) -> String?{
+    func doubleToMoney(_ price: Double, _ currencyCode: String) -> String{
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.currencyCode = currencyCode
-        let priceString = formatter.string(from: NSNumber(value: price))
-        return priceString
+        if let priceString = formatter.string(from: NSNumber(value: price)){
+            return priceString
+        } else {
+            return "ERROR"
+        }
+
     }
 
 }
