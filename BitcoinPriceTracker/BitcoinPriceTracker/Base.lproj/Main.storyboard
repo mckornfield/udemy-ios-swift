@@ -24,6 +24,12 @@
                                     <constraint firstAttribute="width" secondItem="lrT-Cd-l0I" secondAttribute="height" id="Yhi-0U-Pif"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$6000.24" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-xD-Dv2">
+                                <rect key="frame" x="10" y="138" width="355" height="115.66666666666669"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€5000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N68-Ku-nkx">
                                 <rect key="frame" x="10" y="605.66666666666663" width="355" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -36,9 +42,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$6000.24" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-xD-Dv2">
-                                <rect key="frame" x="10" y="138" width="355" height="115.66666666666669"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Updated: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-TY-f5Q">
+                                <rect key="frame" x="111.66666666666667" y="101" width="151.66666666666663" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -51,6 +57,7 @@
                             <constraint firstItem="lrT-Cd-l0I" firstAttribute="top" secondItem="FrW-xD-Dv2" secondAttribute="bottom" constant="15" id="6t5-Bc-MaH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Xa-g1-cTy" secondAttribute="trailing" constant="10" id="Alj-Nd-bzG"/>
                             <constraint firstItem="N68-Ku-nkx" firstAttribute="top" secondItem="1Xa-g1-cTy" secondAttribute="bottom" constant="26" id="CnL-IO-GZ6"/>
+                            <constraint firstItem="mhd-TY-f5Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DTv-UZ-2br"/>
                             <constraint firstItem="FrW-xD-Dv2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JVu-7k-dAe"/>
                             <constraint firstItem="FrW-xD-Dv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="K5M-WW-5qj"/>
                             <constraint firstItem="N68-Ku-nkx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLU-eD-RgB"/>
@@ -58,6 +65,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FrW-xD-Dv2" secondAttribute="trailing" constant="10" id="RCe-ZE-sQf"/>
                             <constraint firstItem="lrT-Cd-l0I" firstAttribute="top" secondItem="FrW-xD-Dv2" secondAttribute="bottom" constant="15" id="RmO-yV-pnG"/>
                             <constraint firstItem="1Xa-g1-cTy" firstAttribute="top" secondItem="lrT-Cd-l0I" secondAttribute="bottom" constant="7.3333333333332575" id="U3e-KX-xB6"/>
+                            <constraint firstItem="mhd-TY-f5Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="gJ5-Iy-1Vb"/>
                             <constraint firstItem="1Xa-g1-cTy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mTm-ib-chM"/>
                             <constraint firstItem="FrW-xD-Dv2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="mto-Tx-bOL"/>
                             <constraint firstItem="1Xa-g1-cTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p1b-zx-1C2"/>
@@ -67,12 +75,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bitcoin Price Tracker" id="bg3-TH-OTQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6ib-WI-FG4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6ib-WI-FG4">
+                            <connections>
+                                <action selector="updatePrice:" destination="BYZ-38-t0r" id="uj1-Wx-Y3J"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="euroLabel" destination="N68-Ku-nkx" id="C6E-ty-NN4"/>
+                        <outlet property="japanLabel" destination="1Xa-g1-cTy" id="j7Z-7T-Ad8"/>
+                        <outlet property="lastUpdatedLabel" destination="mhd-TY-f5Q" id="npp-C4-Gag"/>
+                        <outlet property="usdLabel" destination="FrW-xD-Dv2" id="ysz-pi-naZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="23"/>
+            <point key="canvasLocation" x="1498" y="23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T2N-aX-TPx">
