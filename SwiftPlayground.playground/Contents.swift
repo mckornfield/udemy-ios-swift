@@ -227,3 +227,25 @@ dogInfo
 var dict : [Double:Bool] = [1.0: true, 2.0: false, 1.5: true]
 
 dict[2.0]
+
+// Loops
+
+for i in 1...10 {
+    print("I Love loops n: \(i)")
+}
+
+var favDrinks = ["Mountain Dew", "Diet Coke", "Orange Soda"]
+
+for drink in favDrinks{
+    print(drink)
+}
+
+for index in 0...2 {
+    print(favDrinks[index])
+}
+
+var favNums = [5,10,25,44,100]
+
+for num in favNums{
+    print(num * 2)
+}
